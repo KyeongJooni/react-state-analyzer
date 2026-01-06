@@ -3,7 +3,7 @@
 # React State Analyzer
 
 <p align="center">
-  <strong>A powerful CLI tool for analyzing React state management patterns</strong>
+  <strong>CLI tool for analyzing React state management patterns</strong>
 </p>
 
 <p align="center">
@@ -37,11 +37,11 @@ React State Analyzer helps you understand and optimize state management in your 
 
 ## Features
 
-- ⚡ **Fast Analysis** - Powered by TypeScript AST parsing
+- ⚡ **TypeScript AST Parsing** - Static analysis of React codebases
 - 🎯 **Multi-Library Support** - Detects useState, useContext, useReducer, Redux, Zustand, and Jotai
-- 📈 **Visual Statistics** - Distribution charts and component rankings
-- 💾 **Export Results** - Save analysis data as JSON
-- 🎨 **Beautiful CLI Output** - Color-coded, easy-to-read terminal display
+- 📈 **Statistical Analysis** - Distribution charts and component rankings
+- 💾 **JSON Export** - Save analysis data for further processing
+- 🎨 **Color-Coded Output** - Terminal display with syntax highlighting
 
 ## Installation
 
