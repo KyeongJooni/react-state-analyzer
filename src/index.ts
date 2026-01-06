@@ -8,7 +8,7 @@ import { AnalysisResult, ComponentInfo } from './types';
 
 const program = new Command();
 
-program.name('state-analyzer').description('CLI tool for analyzing React state management patterns').version('1.0.0');
+program.name('state-analyzer').description('CLI tool for analyzing React state management patterns').version('0.2.0');
 
 program
   .command('analyze')
@@ -58,6 +58,7 @@ function printSummary(result: AnalysisResult): void {
     useReducer: 'useReducer',
     zustand: 'zustand',
     jotai: 'jotai',
+    redux: 'redux',
   };
 
   for (const [type, count] of Object.entries(result.summary.byType)) {

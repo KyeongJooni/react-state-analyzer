@@ -115,6 +115,9 @@ export class StateAnalyzer {
       { regex: /useAtom\s*\(/g, type: 'jotai' as const },
       { regex: /useAtomValue\s*\(/g, type: 'jotai' as const },
       { regex: /useSetAtom\s*\(/g, type: 'jotai' as const },
+      { regex: /useSelector\s*[<(]/g, type: 'redux' as const },
+      { regex: /useDispatch\s*[<(]/g, type: 'redux' as const },
+      { regex: /useStore\s*[<(]/g, type: 'redux' as const },
     ];
 
     lines.forEach((line, index) => {

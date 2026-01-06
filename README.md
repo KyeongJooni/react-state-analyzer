@@ -38,7 +38,7 @@ React State Analyzer helps you understand and optimize state management in your 
 ## Features
 
 - ⚡ **Fast Analysis** - Powered by TypeScript AST parsing
-- 🎯 **Multi-Library Support** - Detects useState, useContext, useReducer, Zustand, and Jotai
+- 🎯 **Multi-Library Support** - Detects useState, useContext, useReducer, Redux, Zustand, and Jotai
 - 📈 **Visual Statistics** - Distribution charts and component rankings
 - 💾 **Export Results** - Save analysis data as JSON
 - 🎨 **Beautiful CLI Output** - Color-coded, easy-to-read terminal display
@@ -89,6 +89,7 @@ Average: 3.1 states/component
 
 Usage by type:
   useState: 52
+  redux: 23
   zustand: 18
   useContext: 12
   jotai: 5
@@ -110,6 +111,7 @@ State distribution:
 | Library | Hooks Detected |
 |---------|---------------|
 | **React** | `useState`, `useContext`, `useReducer` |
+| **Redux** | `useSelector`, `useDispatch`, `useStore` |
 | **Zustand** | `use*Store()` patterns |
 | **Jotai** | `useAtom`, `useAtomValue`, `useSetAtom` |
 

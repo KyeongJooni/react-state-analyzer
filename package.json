@@ -1,6 +1,6 @@
 {
   "name": "react-state-analyzer",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI tool for analyzing React state management patterns",
   "author": "KyeongJooni",
   "license": "MIT",

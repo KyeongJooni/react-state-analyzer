@@ -1,5 +1,5 @@
 export interface StateUsage {
-  type: 'useState' | 'useContext' | 'useReducer' | 'zustand' | 'jotai';
+  type: 'useState' | 'useContext' | 'useReducer' | 'zustand' | 'jotai' | 'redux';
   name: string;
   file: string;
   line: number;
