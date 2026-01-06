@@ -1,0 +1,62 @@
+{
+  "name": "react-state-analyzer",
+  "version": "0.1.0",
+  "description": "CLI tool for analyzing React state management patterns",
+  "author": "KyeongJooni",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyeongJooni/react-state-analyzer.git"
+  },
+  "keywords": [
+    "react",
+    "state-management",
+    "analysis",
+    "cli",
+    "zustand",
+    "jotai",
+    "context",
+    "useState"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "state-analyzer": "./dist/index.mjs"
+  },
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "4",
+    "commander": "^14.0.2",
+    "ts-morph": "^27.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
