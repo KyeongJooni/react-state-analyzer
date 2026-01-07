@@ -8,7 +8,7 @@ import { AnalysisResult, ComponentInfo } from './types';
 
 const program = new Command();
 
-program.name('state-analyzer').description('CLI tool for analyzing React state management patterns').version('0.2.0');
+program.name('state-analyzer').description('CLI tool for analyzing React state management patterns').version('0.2.1');
 
 program
   .command('analyze')

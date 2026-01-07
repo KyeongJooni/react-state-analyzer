@@ -12,7 +12,7 @@ export class StateAnalyzer {
   }
 
   analyze(targetPath: string): AnalysisResult {
-    const absolutePath = path.resolve(targetPath);
+    const absolutePath = path.resolve(targetPath).replace(/\\/g, '/');
 
     this.project.addSourceFilesAtPaths([
       `${absolutePath}/**/*.tsx`,
